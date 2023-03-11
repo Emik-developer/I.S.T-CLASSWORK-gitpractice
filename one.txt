@@ -1,1 +1,2 @@
-I am learning how to navigate Git in my local machine.
+I am now learning how to navigate Git in my local machine.
+

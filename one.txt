@@ -1,3 +1,2 @@
 I am now learning how to navigate Git in my local machine.
-this line will give as on issue
 

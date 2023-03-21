@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="eg">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title> Control Structure</title>
+</head>
+<body>
+
+       <script>
+            // let age = 20;
+            // switch(age){
+            //     case 18:
+            //         console.log("You are 18 years")
+            //         break;
+            //     case 19:
+            //         console.log("You are 19 years")
+            //         break;
+            //     case 20:
+            //         console.log("You are 20 years")
+            //         break;
+            //     case 21:
+            //         console.log("You are 21 years")
+            //         break;
+            //     default:
+            //         console.log("You ar neither 18, 19, 20, nor 21");
+            //         break;
+            
+            // }
+            
+            // let mystring ='Hello I\'m learning how to write code in javascript';
+            // console.log(mystring); \ used to escape
+
+
+
+            // let mystring ="Hello I'm learning how to \"write\" code in javascript";
+            // console.log(mystring);
+
+            // console.log(mystring.toUpperCase());
+            // console.log(mystring.toLowerCase());
+            // console.log(mystring.length);
+           
+            // console.log(mystring.indexOf("code")); //for string which is not there,it will be -1
+            // console.log(mystring.indexOf("john"));
+
+            // let name1 = "john"
+            // let name2 = "mary"
+
+            // // let answer = name1 === name2;
+            // // console.log(answer);
+
+            // if(name1 === name2){
+            //     console.log("Those two names match");
+            // }else{
+            //     console.log("The two names does not match");
+            // }
+
+            // // Q1
+            // let emailaddress = prompt("Please enter your email address");
+            // let confirmemailaddress = prompt("Please confirm your email address");
+
+            // if (emailaddress === confirmemailaddress){
+            //     alert("The email address matched. Please continue to enter password");
+            // }else{
+            //     alert("The email you entered does not match the initial mail you entered. Please enter the correct email address and try again.");
+            // }
+
+
+            // // Q2
+            // let password = prompt("Please enter your password");
+            //     if(password.length < 10){
+            //         alert("Please enter a password with more than 10 characters");
+            //     }else{
+            //         alert("Sign in successful");
+            //     }
+
+            
+            // Q3
+            let totalAmount = prompt("Please enter total amount used for shopping");
+
+            // switch(true){
+            //     case totalAmount >= 10000:
+            //     let discount = totalAmount * 0.15;
+            //     let discountedamount = totalAmount - discount;
+            //     alert(`You got a discount of 15%, which is Ksh${discount.toFixed(2)}. Please pay Ksh${discountedamount.toFixed(2)}.`);
+            //     break;
+
+            //     case totalAmount >= 5000 && totalAmount <= 9999:
+            //      discount = totalAmount * 0.1;
+            //      discountedAmount = totalAmount - discount;
+            //      alert(`You got a discount of 10%, which is Ksh${discount.toFixed(2)}. Please pay Ksh${discountedAmount.toFixed(2)}.`);
+            //      break;
+
+            //     case totalAmount >= 3000 && totalAmount <= 4999:
+            //      discount = totalAmount * 0.05;
+            //      discountedAmount = totalAmount - discount;
+            //      alert(`You got a discount of 5%, which is Ksh${discount.toFixed(2)}. Please pay Ksh${discountedAmount.toFixed(2)}.`);
+            //      break;
+
+            //     default:
+            //         alert(`No discount. Please pay Ksh${totalAmount}.`);
+            // }
+
+            if (totalAmount >= 10000) {
+                let discount = totalAmount * 0.15;
+                let discountedAmount = totalAmount - discount;
+                alert(`You got a discount of 15%, which is Ksh${discount.toFixed(2)}. Please pay Ksh${discountedAmount.toFixed(2)}.`);
+
+            } else if (totalAmount >= 5000 && totalAmount <= 9999) {
+                let discount = totalAmount * 0.1;
+                let discountedAmount = totalAmount - discount;
+                alert(`You got a discount of 10%, which is Ksh${discount.toFixed(2)}. Please pay Ksh${discountedAmount.toFixed(2)}.`);
+
+            } else if (totalAmount >= 3000 && totalAmount <= 4999) {
+                let discount = totalAmount * 0.05;
+                let discountedAmount = totalAmount - discount;
+                alert(`You got a discount of 5%, which is Ksh${discount.toFixed(2)}. Please pay Ksh${discountedAmount.toFixed(2)}.`);
+
+            } else {
+                alert(`No discount. Please pay Ksh${totalAmount}.`);
+            }
+            
+       </script>
+</body>    
+</html>
